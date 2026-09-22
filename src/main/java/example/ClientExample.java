@@ -63,19 +63,7 @@ public class ClientExample {
     });
 
     producer.close();
-    /*
-    //Original 
-    String key = "2010";
-    String value = "Carlo";
-    Producer<String, String> producer = new KafkaProducer<>(config);
-    producer.send(new ProducerRecord<>(topic, key, value));
-    System.out.println(
-        String.format(
-            "Produced message to topic %s: key = %s value = %s", topic, key, value));
 
-    // closes the producer connection
-    producer.close();
-     */
   }
 
   public static void consume(String topic, Properties config) {
